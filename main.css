@@ -1,19 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
-  width: 100%;
-}
-
 header {
   font-family: "Hanken Grotesk", sans-serif;
 }
-header div {
+header .header-first-part {
   background: #183833;
   width: 100%;
   color: white;
+  font-size: 14px;
 }
-header i {
+header .header-first-part .first {
+  font-size: 14px;
+}
+header .header-first-part .second {
+  font-size: 16px;
+}
+header .header-first-part .second .content {
+  padding: 0px 59px;
+}
+header .header-first-part .store {
+  width: 113px;
+}
+header .header-first-part .contact {
+  width: 180px;
+}
+header .header-first-part i {
   color: white;
 }
-header span {
+header .header-first-part .number {
   color: #ff5c35;
+}
+header .header-first-part .third .caption {
+  width: 101px;
+}
+header .wrapper {
+  background-color: #fff;
+}
+header .wrapper nav {
+  position: absolute;
+  font-size: 16px;
+}
+header .wrapper nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+header .wrapper nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+header .wrapper nav ul li {
+  list-style: none;
+  transition: 0.5s;
+}
+header .wrapper nav img {
+  width: 300px;
+  height: 350px;
+}
+header .wrapper nav > ul > li > a {
+  padding: 0px 25px;
+  text-transform: uppercase;
+}
+header .wrapper nav > ul > li > a i {
+  color: #19191a;
+  padding-left: 6px;
+}
+header .wrapper nav ul > li.dropdown > a::after {
+  position: relative;
+  float: left;
+  content: "";
+  margin-left: 10px;
+  margin-top: 8px;
+}
+header .wrapper nav > ul > li:hover {
+  background: lavender;
+}
+header .wrapper nav ul.menu-area {
+  padding: 40px 40px 0px 40px;
+  background: #fff;
+  text-align: left;
+  border-top: 5px solid;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  top: -9999px;
+  left: 0;
+  margin-bottom: 100px;
+}
+header .wrapper nav li:hover ul.menu-area {
+  top: 100%;
+}
+header .wrapper nav ul {
+  width: 25%;
+  margin-bottom: 40px;
+  color: #262626;
+}
+header .wrapper nav h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+header .wrapper nav li {
+  display: block;
+}
+header .wrapper nav li a {
+  margin-top: 10px;
+  color: #000;
+  text-transform: none;
+}
+header .search {
+  color: #19191a;
+  width: 40px;
+}
+header .search:hover {
+  color: #ff5c35;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
