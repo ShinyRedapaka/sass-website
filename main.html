@@ -10,11 +10,11 @@
 </head>
 <body>
     <header>
-            <div class="header-first-part p-2">
+            <div class="header-first-part">
                 <div class="container">
-                  <div class="row">
-                    <div class="col-4">
-                           <div class="first d-flex align-items-center">
+                  <div class="header-elements row">
+                    <div class="first col-4">
+                           <div class="d-flex align-items-center">
                                 <div class="store">
                                     <i class="fa-solid fa-location-dot"></i>
                                     Find a Store
@@ -35,30 +35,36 @@
                        </div>
                     </div>
                     <div class="third col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="caption">
-                                <i class="fa-solid fa-globe"></i>
-                                English
-                                <i class="fa-solid fa-angle-down"></i>
-                            </div>
-                                USD
-                                <i class="fa-solid fa-angle-down"></i>
+                        <div class="d-flex justify-content-lg-end">
+                           <div class="row">
+                                <div class="col-6">
+                                    <div class="caption d-flex align-items-center">
+                                        <i class="fa-solid fa-globe globe"></i>
+                                        English
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    USD
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                           </div>
                         </div>
                     </div>
                   </div>
                 </div>
             </div>
-            <div class="header-second-part p-5">
+            <div class="header-second-part">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-3">
-                           <div class="">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-3">
+                           <div class="bakevo-logo">
                                 <a href="https://demo80.leotheme.com/prestashop/leo_bakevo_elementor_demo/en/home-1.html">
                                     <img src="./img/logo-1692686533.jpg" alt="">
                                 </a>
                            </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <div class="wrapper">
                                 <nav>
                                     <ul>
@@ -118,8 +124,8 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="d-flex justify-content-end">
+                        <div class="col-3 mini-icons">
+                            <div class="d-flex justify-content-lg-end">
                                 <i class="search fa-solid fa-magnifying-glass"></i>
                                 <i class="search fa-regular fa-user"></i>
                                 <i class="search fa-solid fa-bag-shopping"></i>
@@ -129,5 +135,58 @@
                 </div>
             </div>
     </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/leo-bakevo-elements-home1-slide1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Special Offers</h5>
+                <p>Simple. Classic. Delicious.</p>
+                <p>Delivery and pick-up options</p>
+                <div>order now</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/leo-bakevo-elements-home1-slide2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Special Offers</h5>
+                <p>Simple. Classic. Delicious.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/leo-bakevo-elements-home1-slide3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="about-us">
+       <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/leo-bakevo-elements-home1-banner1-img1.webp" alt="">
+            </div>
+            <div class="col-4">
+                <div class="heading-title">About us</div>
+                <div class="sub-title">enjoy the pure bite</div>
+                <div class="natural-deserts">Natural desserts for every taste.</div>
+                <p>All of our cakes are baked from scratch daily, nothing is ever frozen, and we only use the highest quality local ingredients. <br><br></p>
+                <p>We offer a variety of breads, including classic favourites like baguettes and dinner rolls, as well as more unique flavors like garlic and herb or sun-dried tomato.</p>
+            </div>
+        </div>
+       </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
