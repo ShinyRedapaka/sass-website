@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Castoro:ital@0;1&display=swap");
 header {
   font-family: "Hanken Grotesk", sans-serif;
 }
@@ -7,8 +9,12 @@ header .header-first-part {
   width: 100%;
   color: white;
   font-size: 14px;
+  padding: 10px;
 }
 header .header-first-part .first {
+  font-size: 14px;
+}
+header .header-first-part .first i {
   font-size: 14px;
 }
 header .header-first-part .second {
@@ -29,88 +35,99 @@ header .header-first-part i {
 header .header-first-part .number {
   color: #ff5c35;
 }
-header .header-first-part .third .caption {
-  width: 101px;
-}
-header .wrapper {
-  background-color: #fff;
+header .header-second-part {
+  padding: 35px;
 }
 header .wrapper nav {
   position: absolute;
-  font-size: 16px;
+  font-size: 14px;
 }
-header .wrapper nav ul {
+header .wrapper nav > ul {
+  margin-top: -23px;
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
   padding: 0;
 }
 header .wrapper nav a {
+  font-family: "Hanken Grotesk", sans-serif;
   display: block;
   text-decoration: none;
-  color: black;
+  color: #183833;
+  font-weight: 600;
 }
 header .wrapper nav ul li {
   list-style: none;
   transition: 0.5s;
 }
-header .wrapper nav img {
-  width: 300px;
+header .wrapper ul img {
+  width: 410px;
   height: 350px;
+  margin-left: -139px;
 }
 header .wrapper nav > ul > li > a {
-  padding: 0px 25px;
+  padding: 15px 25px;
   text-transform: uppercase;
-}
-header .wrapper nav > ul > li > a i {
-  color: #19191a;
-  padding-left: 6px;
+  letter-spacing: 2px;
 }
 header .wrapper nav ul > li.dropdown > a::after {
   position: relative;
-  float: left;
+  float: right;
   content: "";
   margin-left: 10px;
   margin-top: 8px;
-}
-header .wrapper nav > ul > li:hover {
-  background: lavender;
 }
 header .wrapper nav ul.menu-area {
   padding: 40px 40px 0px 40px;
   background: #fff;
   text-align: left;
-  border-top: 5px solid;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   z-index: 1;
   position: absolute;
+  box-shadow: 0 -10px 15px rgba(97, 96, 96, 0.1);
   display: flex;
   flex-wrap: wrap;
-  width: 1170px;
+  width: 1912px;
   top: -9999px;
-  left: 0;
+  left: -745px;
   margin-bottom: 100px;
+  justify-content: center;
 }
-header .wrapper nav li:hover ul.menu-area {
+header .wrapper nav ul li:hover ul.menu-area {
   top: 100%;
 }
-header .wrapper nav ul {
-  width: 25%;
+header .wrapper nav ul.menu-area ul {
+  width: 18.5%;
   margin-bottom: 40px;
   color: #262626;
 }
-header .wrapper nav h4 {
+header .wrapper nav ul.menu-area h4 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-header .wrapper nav li {
+header .wrapper nav ul.menu-area ul li {
   display: block;
 }
-header .wrapper nav li a {
-  margin-top: 10px;
-  color: #000;
-  text-transform: none;
+header .wrapper .dropdown ul h4 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+header .wrapper .dropdown ul li a {
+  color: #555;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+}
+header .mini-icons i {
+  font-size: 20px;
+}
+header .orange {
+  background-color: #ff5c35;
+  font-size: 10px;
+}
+header .orange:hover {
+  background-color: #183833;
 }
 header .search {
   color: #19191a;
@@ -119,4 +136,182 @@ header .search {
 header .search:hover {
   color: #ff5c35;
   cursor: pointer;
+}
+
+.carousel-indicators [data-bs-target] {
+  list-style-type: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.offers h5 {
+  color: #ff5c35;
+  font-family: "Alex Brush";
+  position: absolute;
+  font-size: 48px;
+  font-weight: 400;
+  top: -482px;
+  left: 537px;
+}
+.offers .classic {
+  font-family: "Castoro", serif;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -415px;
+  left: 186px;
+}
+.offers p {
+  font-family: "Castoro", serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -329px;
+  left: 471px;
+}
+.offers .button-slide {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600 !important;
+  padding: 20px 30px;
+  background-color: #183833;
+  width: 165.938px;
+  transition: 0.3s;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -259px;
+  left: 589px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.offers .button-slide:hover {
+  background-color: #ff5c35;
+  transition: 0.3s;
+}
+
+.about-us {
+  background-image: url("./img/leo-bakevo-elements-home1-banner1-bg.webp");
+  padding: 110px 0px 100px 0px;
+}
+.about-us img {
+  max-width: 100%;
+}
+.about-us .titles {
+  width: 41.67%;
+  padding: 0px 70px 0px 15px;
+}
+.about-us .heading-title {
+  color: #ff5c35;
+  font-family: "Alex Brush";
+  position: absolute;
+  top: 1168px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.about-us .sub-title {
+  font-family: "Castoro", serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  top: 1232px;
+}
+.about-us .natural-deserts {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  font-family: "Hanken Grotesk", sans-serif;
+  position: absolute;
+  top: 1310px;
+}
+.about-us .content {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #555555;
+  position: absolute;
+  top: 1346px;
+}
+.about-us .content p:nth-of-type(1) {
+  width: 444px;
+}
+.about-us .content p:nth-of-type(2) {
+  width: 441px;
+}
+.about-us .button-slide {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600 !important;
+  padding: 15px 30px;
+  background-color: #183833;
+  width: 165.938px;
+  transition: 0.3s;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1547px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.about-us .button-slide:hover {
+  background-color: #ff5c35;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-first-part {
+    padding: 10px;
+  }
+  .header-first-part .header-elements {
+    justify-content: center;
+  }
+  .header-first-part .first {
+    display: none;
+  }
+  .header-first-part .second {
+    display: none;
+  }
+  .header-second-part .wrapper {
+    display: none;
+  }
+  .header-second-part .bakevo-logo {
+    text-align: center;
+  }
+  .header-second-part .mini-icons {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 198px;
+  }
+  .header-second-part .collapse-icon i {
+    margin-left: -256px;
+    color: #19191a;
+  }
+  .offers h5 {
+    font-size: 22px;
+    font-weight: 400;
+    top: -68px;
+    left: 91px;
+  }
+  .offers .classic {
+    font-size: 18px;
+    font-weight: 200;
+    top: -42px;
+    left: 24px;
+  }
+  .offers p {
+    font-size: 9px;
+    font-weight: 100;
+    top: -14px;
+    left: 77px;
+  }
+  .offers .button-slide {
+    font-size: 8px;
+    padding: 6px 9px;
+    top: 0px;
+    left: 68px;
+  }
 }/*# sourceMappingURL=main.css.map */
