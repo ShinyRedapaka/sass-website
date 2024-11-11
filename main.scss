@@ -1,10 +1,11 @@
 $bgGreen: #183833;
 $white: white;
 $orange: #ff5c35;
+$grey: #555;
 
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Castoro:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Castoro:ital@0;1&display=swap');
 
 header{
     font-family: "Hanken Grotesk", sans-serif;
@@ -43,7 +44,6 @@ header{
         padding: 35px;
     }
     .wrapper{
-        
         nav{
             position: absolute;
             font-size: 14px;
@@ -62,19 +62,20 @@ header{
             text-decoration: none;
             color: $bgGreen;
             font-weight: 600;
-            letter-spacing: 2px;
         }
         nav ul li{
             list-style: none;
             transition: 0.5s;
         }
         ul img{
-            width: 300px;
+            width: 410px;
             height: 350px;
+            margin-left: -139px;
         }
         nav > ul > li > a{
             padding: 15px 25px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
         nav ul>li.dropdown> a::after{
             position: relative;
@@ -83,29 +84,26 @@ header{
             margin-left: 10px;
             margin-top: 8px;
         }
-        nav > ul > li:hover{
-            background: lavender;
-        }
         nav ul.menu-area{
             padding: 40px 40px 0px 40px;
             background: #fff;
             text-align: left;
-            border-top: 5px solid;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.6);
             z-index: 1;
             position: absolute;
+            box-shadow: 0 -10px 15px rgba(97, 96, 96, 0.1);
             display: flex;
             flex-wrap: wrap;
-            width: 1170px;
+            width: 1912px;
             top: -9999px;
-            left: 0;
+            left: -745px;
             margin-bottom: 100px;
+            justify-content: center;
         }
         nav ul li:hover ul.menu-area{
             top: 100%;
         }
         nav ul.menu-area ul{
-            width: 25%;
+            width: 18.5%;
             margin-bottom: 40px;
             color: #262626;
         }
@@ -116,18 +114,34 @@ header{
         nav ul.menu-area ul li{
             display: block;
         }
-        nav ul.menu-area ul li a{
-            margin-top: 10px;
-            color: #000;
-            text-transform: none;
-        }
-        nav ul.menu-area ul li a:hover{
-            color: #164c82;
+       
+        .dropdown{
+            ul{
+                h4{
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: rgb(0, 0, 0);
+                }
+                li a{
+                    color: $grey;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
         }
      }
     .mini-icons{
         i{
             font-size: 20px;
+        }
+    }
+    .orange{
+        background-color: $orange;
+        font-size: 10px;
+        &:hover{
+            background-color: $bgGreen;
         }
     }
     .search{
@@ -138,26 +152,128 @@ header{
             cursor: pointer;
         }
     }
-    .first-text{
-        font-size: 48px;
-        text-align: center;
-        font-weight: 400;
-        line-height: 1.1;
-        font-family: "Alex Brush", cursive;
-        letter-spacing: -2px;
+}
+.carousel-indicators [data-bs-target]{
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.offers{
+    h5{
         color: #ff5c35;
-        opacity: 1;
-        top: 258px;
-        width: 1920px;
-        height: 52.7969px;
-        left: 0px;
+        font-family: "Alex Brush";
+        position: absolute;
+        font-size: 48px;
+        font-weight: 400;
+        top: -482px;
+        left: 537px;
     }
-    .about-us{
-        background-image: url('./img/leo-bakevo-elements-home1-banner1-bg.webp');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding: 110px 0px 100px 0px;
+    .classic{
+        font-family: "Castoro", serif;
+        text-transform: uppercase;
+        font-size: 64px;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: -415px;
+        left: 186px;
+    }
+    p{
+        font-family: "Castoro", serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: -329px;
+        left: 471px;
+    }
+    .button-slide{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600 !important;
+        padding: 20px 30px;
+        background-color: $bgGreen;
+        width: 165.938px;
+        transition: .3s;
+        border-radius: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: absolute;
+        top: -259px;
+        left: 589px;
+        font-family: "Hanken Grotesk", sans-serif;
+        &:hover{
+            background-color: $orange;
+            transition: .3s;   
+        }
+    }
+}
+.about-us{
+    background-image: url('./img/leo-bakevo-elements-home1-banner1-bg.webp');
+    padding: 110px 0px 100px 0px;
+    img{
+        max-width: 100%;
+    }
+    .titles{
+        width: 41.67%;
+        padding: 0px 70px 0px 15px;
+    }
+    .heading-title{
+        color: $orange;
+        font-family: "Alex Brush";
+        position: absolute;
+        top: 1168px;
+        font-size: 48px;
+        font-weight: 400;
+    }
+    .sub-title{
+        font-family: "Castoro", serif;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 400;
+        position: absolute;
+        top: 1232px;
+    }
+    .natural-deserts{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2em;
+        font-family: "Hanken Grotesk", sans-serif;
+        position: absolute;
+        top: 1310px;
+    }
+    .content{
+        font-family: "Hanken Grotesk", sans-serif;
+        color: #555555;
+        position: absolute;
+        top: 1346px;
+        p:nth-of-type(1){
+            width: 444px;
+        }
+        p:nth-of-type(2){
+            width: 441px;
+        }
+    }
+    .button-slide{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600 !important;
+        padding: 15px 30px;
+        background-color: $bgGreen;
+        width: 165.938px;
+        transition: .3s;
+        border-radius: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 1547px;
+        font-family: "Hanken Grotesk", sans-serif;
+        &:hover{
+            background-color: $orange;
+            transition: .3s;   
+        }
     }
 }
 @media screen and (max-width:1024px){
@@ -183,7 +299,39 @@ header{
         .mini-icons{
             display: flex;
             margin-top: 30px;
-            margin-left: 90px;
+            margin-left: 198px;
+        }
+        .collapse-icon{
+            i{
+                margin-left: -256px;
+                color: #19191a;
+            }
+        }
+    }
+    .offers{
+        h5{
+            font-size: 22px;
+            font-weight: 400;
+            top: -68px;
+            left: 91px;
+        }
+        .classic{
+            font-size: 18px;
+            font-weight: 200;
+            top: -42px;
+            left: 24px;
+        }
+        p{
+            font-size: 9px;
+            font-weight: 100;
+            top: -14px;
+            left: 77px;
+        }
+        .button-slide{
+            font-size: 8px;
+            padding: 6px 9px;
+            top: 0px;
+            left: 68px;
         }
     }
 }
